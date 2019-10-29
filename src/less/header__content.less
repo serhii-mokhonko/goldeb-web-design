@@ -1,0 +1,30 @@
+.header {
+    .container {
+        position: relative;
+    }
+}
+
+.header__content {
+    width     : 100%;
+    text-align: center;
+    color     : @white;
+    position  : absolute;
+    top       : 50%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+
+    & h1 {
+        font-family   : 'Montserrat', sans-serif;
+        font-size     : 4.5rem;
+        font-weight   : 700;
+        text-transform: uppercase;
+        margin        : 3rem auto;
+    }
+
+    & h2 {
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        font-size  : 2.66rem;
+        font-style : italic;
+    }
+}
