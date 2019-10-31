@@ -1,0 +1,91 @@
+.about {
+    .container();
+}
+
+.about__timeline__item {
+    display              : grid;
+    grid-template-columns: 35% 20% 35%;
+    grid-column-gap      : 5%;
+    grid-template-areas  :
+        "content image empty";
+
+    margin-bottom: 100px;
+    text-align   : right;
+
+    .about__timeline__item__image {
+        grid-area   : image;
+        justify-self: center;
+        align-self  : center;
+
+        img {
+            width        : 11.33rem;
+            height       : 11.33rem;
+            border-radius: 50%;
+            overflow     : hidden;
+        }
+    }
+
+    .about__timeline__item__content {
+        grid-area : content;
+        align-self: center;
+
+        time {
+            font-family   : 'Montserrat', sans-serif;
+            font-size     : 1.2rem;
+            font-weight   : 700;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin-top: 0.8rem;
+            font-size : 1.2rem;
+        }
+
+        p {
+            font-family: @text-font;
+            font-size  : 0.93rem;
+            color      : @main-text-color;
+
+        }
+    }
+
+    &:nth-child(even) {
+        grid-template-columns: 35% 20% 35%;
+        grid-template-areas  :
+            "empty image content";
+
+        text-align: left;
+    }
+
+    .about__timeline__circle {
+        grid-area   : image;
+        justify-self: center;
+        align-self  : center;
+        
+        width        : 11.33rem;
+        height       : 11.33rem;
+        
+        border-radius: 50%;
+        background   : @gold;
+        text-align: center;
+        vertical-align: middle;
+
+        position: relative;
+        
+
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            font-size: 1.2rem;
+            font-weight: 700;
+            width: 100%;
+            
+        }
+
+
+    }
+}
