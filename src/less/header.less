@@ -22,6 +22,8 @@
     font-size  : 1.73rem;
     font-weight: 700;
     color      : @gold;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .header__nav {
@@ -33,5 +35,15 @@
         color          : @white;
 
         margin-right: 2.66rem;
+    }
+}
+
+@media screen and (max-width: 659px){
+    .header__logo{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .header__nav{
+        display: none;
     }
 }
