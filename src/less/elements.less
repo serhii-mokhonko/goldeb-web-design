@@ -34,7 +34,7 @@
 
     background: @gold;
     color     : @white;
-    
+
 
     border       : 1px solid @gold;
     border-radius: 3px;
@@ -125,6 +125,27 @@
     justify-content: center;
     align-items    : center;
 
+    .svg-icon {
+        width : 20px;
+        height: 20px;
+        fill  : #000;
+
+    }
+
+    &:hover {
+        .svg-icon {
+            fill: #fff;
+        }
+    }
+
+    &--dark {
+        background: #000;
+
+        .svg-icon {
+            fill: #fff;
+        }
+    }
+
     &--mr {
         margin-right: 10px;
 
@@ -133,24 +154,24 @@
         }
     }
 
-    img {
-        width : 20px;
-        height: auto;
-    }
 }
 
 .twitter:hover {
     background: #00aced;
+    border    : 3px solid #00aced;
 }
 
 .facebook:hover {
     background: #3b5998;
+    border    : 3px solid #3b5998;
 }
 
 .pinterest:hover {
     background: #cb2028;
+    border    : 3px solid #cb2028;
 }
 
 .google:hover {
     background: #da2713;
+    border    : 3px solid #da2713;
 }
